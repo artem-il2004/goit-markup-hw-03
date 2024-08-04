@@ -26,7 +26,7 @@
 
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container headerr">
         <nav class="navcon">
           <a href="./index.html" class="logo"
             >Web<span class="logo-stud">Studio</span></a
@@ -40,7 +40,7 @@
           </ul>
         </nav>
 
-        <address>
+        <address class="address">
           <ul class="address-list">
             <li class="address-link">
               <a href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -54,38 +54,38 @@
     </header>
 
     <main>
-      <section>
-        <div class="container">
+      <section class="hero">
+        <div class="container hero">
           <h1 class="title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-button">Order Service</button>
         </div>
       </section>
-      <section>
-        <div class="container">
-          <h2 class="content-title">Content</h2>
-          <ul>
-            <li>
+      <section class="content-section">
+        <div class="container content">
+          <h2 class="visually-hidden">Content</h2>
+          <ul class="content-list">
+            <li class="content-li">
               <h3 class="page-title">Strategy</h3>
               <p class="page-content">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li>
+            <li class="content-li">
               <h3 class="page-title">Punctuality</h3>
               <p class="page-content">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li>
+            <li class="content-li">
               <h3 class="page-title">Diligence</h3>
               <p class="page-content">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li>
+            <li class="content-li">
               <h3 class="page-title">Technologies</h3>
               <p class="page-content">
                 Design practice focused on digital experiences. We bring forth a
@@ -100,15 +100,17 @@
       <section class="our-teams">
         <div class="container">
           <h2 class="second-title">Our Team</h2>
-          <ul>
+          <ul class="team-ul">
             <li class="team-list">
               <img
                 src="./images/markguerrerolowquality.jpg"
                 alt="Mark Guerrero Product Designer"
                 width="264"
               />
-              <h3 class="secpage-title">Mark Guerrero</h3>
-              <p class="page-content">Product Designer</p>
+              <div class="name">
+                <h3 class="secpage-title">Mark Guerrero</h3>
+                <p class="secpage-content">Product Designer</p>
+              </div>
             </li>
             <li class="team-list">
               <img
@@ -116,8 +118,10 @@
                 alt="Tom Ford Frontend Developer"
                 width="264"
               />
-              <h3 class="secpage-title">Tom Ford</h3>
-              <p class="page-content">Frontend Developer</p>
+              <div class="name">
+                <h3 class="secpage-title">Tom Ford</h3>
+                <p class="secpage-content">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-list">
               <img
@@ -125,8 +129,10 @@
                 alt="Camila Garcia Marketing"
                 width="264"
               />
-              <h3 class="secpage-title">Camila Garcia</h3>
-              <p class="page-content">Marketing</p>
+              <div class="name">
+                <h3 class="secpage-title">Camila Garcia</h3>
+                <p class="secpage-content">Marketing</p>
+              </div>
             </li>
             <li class="team-list">
               <img
@@ -134,8 +140,10 @@
                 alt="Daniel Wilson UI Designer"
                 width="264"
               />
-              <h3 class="secpage-title">Daniel Wilson</h3>
-              <p class="page-content">UI Designer</p>
+              <div class="name">
+                <h3 class="secpage-title">Daniel Wilson</h3>
+                <p class="secpage-content">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -143,68 +151,75 @@
 
       <!--   OUR Portfolio                                                                   -->
       <section class="portfolio">
-        <div class="container">
+        <div class="container portfolio">
           <h2 class="thirdcontent-title">Our Portfolio</h2>
-          <ul>
-            <li>
-              <img
-                src="./images/bankinapp.jpg"
-                alt="Banking App"
-                width="360"
-                height="300"
-              />
-              <h3 class="thirdpage-title">Banking App</h3>
-              <p class="thirdpage-content">App</p>
+          <ul class="portfoliolist">
+            <li class="portfolioli">
+              <img src="./images/bankinapp.jpg" alt="Banking App" width="360" />
+              <div class="namesec">
+                <h3 class="thirdpage-title">Banking App</h3>
+
+                <p class="thirdpage-content">App</p>
+              </div>
             </li>
-            <li>
+            <li class="portfolioli">
               <img
                 src="./images/cashlesspayment.jpg"
                 alt="Cashless Payment"
                 width="360"
-                height="300"
               />
-              <h3 class="thirdpage-title">Cashless Payment</h3>
-              <p class="thirdpage-content">Marketing</p>
+              <div class="namesec">
+                <h3 class="thirdpage-title">Cashless Payment</h3>
+                <p class="thirdpage-content">Marketing</p>
+              </div>
             </li>
-            <li>
+            <li class="portfolioli">
               <img
                 src="./images/meditationapp.jpg"
                 alt="Meditation App"
                 width="360"
-                height="300"
               />
-              <h3 class="thirdpage-title">Meditation App</h3>
-              <p class="thirdpage-content">App</p>
+
+              <div class="namesec">
+                <h3 class="thirdpage-title">Meditation App</h3>
+                <p class="thirdpage-content">App</p>
+              </div>
             </li>
-            <li>
+            <li class="portfolioli">
               <img
                 src="./images/taxiservise.jpg"
                 alt="Taxi Service"
                 width="360"
-                height="300"
               />
-              <h3 class="thirdpage-title">Taxi Service</h3>
-              <p class="thirdpage-content">Marketing</p>
+
+              <div class="namesec">
+                <h3 class="thirdpage-title">Taxi Service</h3>
+                <p class="thirdpage-content">Marketing</p>
+              </div>
             </li>
-            <li>
+            <li class="portfolioli">
               <img
                 src="./images/screenillustration.jpg"
                 alt="Screen Illustrations"
                 width="360"
-                height="300"
               />
-              <h3 class="thirdpage-title">Screen Illustrations</h3>
-              <p class="thirdpage-content">Design</p>
+
+              <div class="namesec">
+                <h3 class="thirdpage-title">Screen Illustrations</h3>
+                <p class="thirdpage-content">Design</p>
+              </div>
             </li>
-            <li>
+            <li class="portfolioli">
               <img
                 src="./images/onlinecurses.jpg"
                 alt="Online Courses"
                 width="360"
-                height="300"
               />
-              <h3 class="thirdpage-title">Online Courses</h3>
-              <p class="thirdpage-content">Marketing</p>
+
+              <div class="namesec">
+                <h3 class="thirdpage-title">Online Courses</h3>
+                <p class="thirdpage-content">Marketing</p>
+              </div>
             </li>
           </ul>
         </div>
