@@ -49,7 +49,10 @@ img
     display: flex;
     gap: 40px;
 }
-
+.li
+{
+    padding: 24px 0;
+}
 
 .logo {
     font-family: "Raleway", sans-serif;
@@ -59,13 +62,14 @@ img
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px;
 }
 .logo-stud
 {
     line-height: 1.7;
     color: #2e2f42;
     letter-spacing: 0.02em;
-    margin-right: 76px;
+    
 }
 .logo-stud:focus,
 .logo-stud:hover
@@ -78,6 +82,7 @@ color: #404bbf;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    
 }
 .nav-list .link a:hover,
 .nav-list .link a:active, .link:focus
@@ -119,13 +124,13 @@ color: #404bbf;
 {
     display: flex;
     flex-direction: column;
-    padding: 188px 0;
     align-items: center;
     justify-items: center;
 }
 
 .hero
 {
+    padding: 188px 0;
     background-color: #2e2f42;
 }
 .title
@@ -263,13 +268,12 @@ font-weight: 700;
 display: flex;
 align-items: center;
 gap: 24px ;
-flex-wrap: nowrap;
 }
 .team-list
 { display: flex;
     align-items: center;
     flex-direction: column;
-    flex-basis: calc((100% - 24px*4) / 4);
+    flex-basis: calc((100% - 72px) / 4);
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
 }
@@ -320,8 +324,6 @@ flex-wrap: nowrap;
 .container.portfolio
 {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 
@@ -329,13 +331,14 @@ flex-wrap: nowrap;
 {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 48px;
+    gap: 24px;
 }
 
 .portfolioli
 {
-    width: calc((100% - 48px) / 3);
+    display: flex;
+    flex-basis: calc((100% - 48px) / 3);
+    flex-direction: column;
 }
 .namesec
 {
@@ -392,7 +395,7 @@ font-weight: 700;
 
 .footer
 {
-    padding: 100px;
+    padding: 100px 0;
 }
 .logo-foot {
     font-family: "Raleway", sans-serif;
