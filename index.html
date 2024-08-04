@@ -15,34 +15,38 @@
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
-    <header>
-      <div class="container header">
-        <nav>
+    <header class="header">
+      <div class="container">
+        <nav class="navcon">
           <a href="./index.html" class="logo"
             >Web<span class="logo-stud">Studio</span></a
           >
           <ul class="nav-list">
-            <li>
-              <a href="./index.html" class="link">Studio</a>
+            <li class="link">
+              <a href="./index.html">Studio</a>
             </li>
-            <li><a href="" class="link">Portfolio</a></li>
-            <li><a href="" class="link">Contacts</a></li>
+            <li class="link"><a href="">Portfolio</a></li>
+            <li class="link"><a href="">Contacts</a></li>
           </ul>
         </nav>
+
         <address>
           <ul class="address-list">
-            <li>
-              <a class="address-link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+            <li class="address-link">
+              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li>
-              <a class="address-link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
+            <li class="address-link">
+              <a href="tel:+110001111111">+11 (000) 111-11-11</a>
             </li>
           </ul>
         </address>
@@ -51,38 +55,37 @@
 
     <main>
       <section>
-        <div class="container hero">
+        <div class="container">
           <h1 class="title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-button">Order Service</button>
         </div>
       </section>
-      <!--   4 секции -->
       <section>
-        <div class="container content">
+        <div class="container">
           <h2 class="content-title">Content</h2>
-          <ul class="list-grid">
-            <li class="list-item">
+          <ul>
+            <li>
               <h3 class="page-title">Strategy</h3>
               <p class="page-content">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li class="list-item">
+            <li>
               <h3 class="page-title">Punctuality</h3>
               <p class="page-content">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li class="list-item">
+            <li>
               <h3 class="page-title">Diligence</h3>
               <p class="page-content">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li class="list-item">
+            <li>
               <h3 class="page-title">Technologies</h3>
               <p class="page-content">
                 Design practice focused on digital experiences. We bring forth a
@@ -94,10 +97,10 @@
       </section>
 
       <!--   #OUR TEAMS                                                                    -->
-      <section>
-        <div class="container ourteams">
+      <section class="our-teams">
+        <div class="container">
           <h2 class="second-title">Our Team</h2>
-          <ul class="ourtems-list">
+          <ul>
             <li class="team-list">
               <img
                 src="./images/markguerrerolowquality.jpg"
@@ -139,11 +142,11 @@
       </section>
 
       <!--   OUR Portfolio                                                                   -->
-      <section>
-        <div class=".container portfolio">
+      <section class="portfolio">
+        <div class="container">
           <h2 class="thirdcontent-title">Our Portfolio</h2>
-          <ul class="portfolio-list">
-            <li class="item-of-portfolio">
+          <ul>
+            <li>
               <img
                 src="./images/bankinapp.jpg"
                 alt="Banking App"
@@ -153,7 +156,7 @@
               <h3 class="thirdpage-title">Banking App</h3>
               <p class="thirdpage-content">App</p>
             </li>
-            <li class="item-of-portfolio">
+            <li>
               <img
                 src="./images/cashlesspayment.jpg"
                 alt="Cashless Payment"
@@ -163,7 +166,7 @@
               <h3 class="thirdpage-title">Cashless Payment</h3>
               <p class="thirdpage-content">Marketing</p>
             </li>
-            <li class="item-of-portfolio">
+            <li>
               <img
                 src="./images/meditationapp.jpg"
                 alt="Meditation App"
@@ -173,7 +176,7 @@
               <h3 class="thirdpage-title">Meditation App</h3>
               <p class="thirdpage-content">App</p>
             </li>
-            <li class="item-of-portfolio">
+            <li>
               <img
                 src="./images/taxiservise.jpg"
                 alt="Taxi Service"
@@ -183,7 +186,7 @@
               <h3 class="thirdpage-title">Taxi Service</h3>
               <p class="thirdpage-content">Marketing</p>
             </li>
-            <li class="item-of-portfolio">
+            <li>
               <img
                 src="./images/screenillustration.jpg"
                 alt="Screen Illustrations"
@@ -193,7 +196,7 @@
               <h3 class="thirdpage-title">Screen Illustrations</h3>
               <p class="thirdpage-content">Design</p>
             </li>
-            <li class="item-of-portfolio">
+            <li>
               <img
                 src="./images/onlinecurses.jpg"
                 alt="Online Courses"
@@ -208,9 +211,8 @@
       </section>
     </main>
 
-    <!--   футер  -->
-    <footer>
-      <div class="footer">
+    <footer class="footer">
+      <div class="container">
         <a href="./index.html" class="logo-foot"
           >Web<span class="logo-er">Studio</span></a
         >

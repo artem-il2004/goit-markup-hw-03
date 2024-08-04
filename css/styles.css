@@ -6,66 +6,59 @@ body {
     line-height: 1.5;
     color:#434455;
     background-color: #FFFFFF;
-    margin: 0;
-    padding: 0;
-}
-h1,h2,h3,h4,h5,h6{margin: 0; padding: 0;}
-a {
-    text-decoration: none;
-}
-.container
-{
-    flex-basis: 1158px;
-}
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
 }
 .address-cl
 {
     font-style: normal;
 }
+h1,h2,h3,h4,h5,h6
+{
+    margin: 0;
+    padding: 0;
+}
+img
+{
+    display: block;
+}
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.header
+{
+    border-bottom: 1px solid #e7e9fc
+}
+/*конец подготовки */
 
-.container.header
+.navcon
 {
     display: flex;
-    padding: 15px;
-    margin: 0 auto;
     align-items: center;
-    justify-content: space-between;
-    border: 1px solid #E7E9FC;
-}
-nav
-{
-    display: flex; 
-    align-items: center;
-    
 }
 .nav-list
 {
     display: flex;
-    align-items: center;
-    gap: 40px;  
+    gap: 40px;
+    padding: 24px 0;
 }
-
-
+.link{
+    display: flex;
+}
 .logo {
     font-family: "Raleway", sans-serif;
-    font-weight: 700;
+font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    margin-right: 76px;
+    margin:76px;
 }
 .logo-stud
-{
-    line-height: 1.7;
+{line-height: 1.7;
     color: #2e2f42;
     letter-spacing: 0.02em;
-
 
 }
 .logo-stud:focus,
@@ -73,53 +66,40 @@ nav
 {
 color: #404bbf;
 }
-
-.link 
+.nav-list .link a
 {   font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
 }
-
-.link:hover,
-.link:active, .link:focus
+.nav-list .link a:hover,
+.nav-list .link a:active, .link:focus
 {
     color: #404bbf;
 }
+
 
 
 .address-list
 {
     font-style: normal;
     display: flex;
-    align-items: center;
     gap: 40px;
 }
-.address-link {
-    display: flex;
-    letter-spacing: 0.02em;
-    color: #434455;
-   
-}
-.address-link:hover,
-.address-link:focus {
+.address-list  > .address-link > a:hover,
+.address-list  > .address-link > a:focus {
     color: #404bbf;
 }
-
-
-
+.address-list  > .address-link > a
+{
+    letter-spacing: 0.02em;
+    color: #434455;
+}
 /* header                      */
-.container.hero
+.hero
 {
     background-color: #2e2f42;
-    padding: 187px 331px 331px 293px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 40px;
-    
 }
 .title
 {
@@ -128,9 +108,6 @@ color: #404bbf;
     text-align: center;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    display: flex;
-    max-width: 496px;
-    max-height: 120px;
 }
 .hero-button
 {
@@ -141,7 +118,6 @@ color: #404bbf;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #FFFFFF;
-    display: flex;
 }
 .hero-button:hover,.hero-button:focus
 {
@@ -149,40 +125,17 @@ color: #404bbf;
     cursor: pointer;
 }
 /*  section 1*/
-.container.content
-{ 
-    align-items: center;
-    display: flex;
-    padding: 15px;
-    margin: 98px auto;
-    justify-content: center;
-}
-.container.content:first-child
-{
-    flex-direction: column;
-    
-}
-.list-grid
-{   max-width: 1128px;
-    max-height: 104px;
-    display: flex;
-    gap: 24px;
-   
-}
 .content-title
 {
-    display: flex;
     font-family: "Roboto",sans-serif;
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.02em;
     line-height: 1.2;
     color: #2e2f42; 
-   
 }
 .page-title
-{   display: flex;
-    align-items: center;
+{
     font-family: "Roboto",sans-serif;
     font-weight: 500;
     font-size: 20px;
@@ -191,23 +144,6 @@ color: #404bbf;
         color: #2e2f42;
 }
 /*section 2*/
-.container.ourteams
-{
-    background-color: #F4F4FD;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.container.ourteams:first-child
-{
-    flex-direction: column;
-}
-.ourtems-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    padding-bottom: 120px;
-}
 .second-title
 {
     font-family: "Roboto", sans-serif;
@@ -218,16 +154,13 @@ font-weight: 700;
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
-    margin-bottom: 72px;
-  padding-top: 120px;
 
 }
-
 .secpage-title
 {
     font-family: "Roboto", sans-serif;
 font-weight: 500;
- font-size: 20px;
+    font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-align: center;
@@ -243,16 +176,11 @@ font-weight: 500;
         text-align: center;
         color: #434455;
 }
+/* our teams section 3*/
 .team-list
 {
     background-color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 8px;
-   
 }
-
 .page-content
 {
     font-family: "Roboto", sans-serif;
@@ -263,34 +191,6 @@ font-weight: 400;
     color: #434455;
 
 }
-/* our teams section 3*/
-
-
-
-.container.portfolio
-{
-    display: flex;
-    margin: 120px;
-    align-items: center;
-}
-
-.portfolio-list
-{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    flex-basis: 1128px;
-    height: 1000px;
-    margin: 0 auto;
-    align-content: center;
-}
-
-.item-of-portfolio
-{
-    flex-basis: calc((100% - 2 * 24px) / 3);
-    height: 420px;
-}
-
 .thirdcontent-title
 {
 font-family: "Roboto", sans-serif;
@@ -301,7 +201,6 @@ font-weight: 700;
     text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
-    margin: 0 auto;
 }
 .thirdpage-title
 {  font-family: "Roboto", sans-serif;
@@ -320,19 +219,9 @@ font-weight: 700;
         letter-spacing: 0.02em;
         color: #434455;
 }
-
-
-
-/* footer*/
-.footer
+.our-teams
 {
-    display: flex;
-    flex-direction: column;
-    padding: 100px; 
-    flex-basis: 264px;
-    align-items: flex-start;
-    align-content: flex-start;
-    justify-content: flex-start;
+    background-color: #F4F4FD;
 }
 .logo-foot {
     font-family: "Raleway", sans-serif;
@@ -352,7 +241,7 @@ font-weight: 700;
         text-transform: uppercase;
         color: #f4f4fd;
 }
-footer
+.footer
 {
     background-color: #2E2F42;
     font-family: "Roboto", sans-serif;
@@ -361,4 +250,11 @@ footer
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #f4f4fd;
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
 }
