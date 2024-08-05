@@ -42,7 +42,7 @@ ul {
     display: flex ;
     align-items: center;
    justify-content: space-between;
-   padding: 24px 0;
+   
 }
 
 .navcon
@@ -55,8 +55,7 @@ ul {
     display: flex;
     gap: 40px;
 }
-.link .lis
-{
+.nav-list .link .lis {
     padding: 24px 0;
 }
 
@@ -69,6 +68,7 @@ ul {
     text-transform: uppercase;
     color: #4d5ae5;
     margin-right: 76px;
+    padding: 24px 0;
 }
 .logo-stud
 {
