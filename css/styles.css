@@ -216,7 +216,7 @@ align-items: center;
 .content-li
 {
     display: flex;
-    width: calc((100% - 72px) / 4);
+    flex-basis: calc((100% - 3 * 24px) / 4);
     flex-direction: column;
 }
 
@@ -239,6 +239,7 @@ align-items: center;
         color: #2e2f42;
         margin-bottom: 8px;
 }
+
 /*section 2*/
 
 
@@ -270,9 +271,9 @@ display: flex;
 gap: 24px ;
 }
 .team-list
-{ display: flex;
+{   display: flex;
     flex-direction: column;
-    flex-basis: calc((100% - 72px) / 4);
+    flex-basis: calc((100% - 72px) / 4);    
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
 }
