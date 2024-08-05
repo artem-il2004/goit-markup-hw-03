@@ -20,7 +20,12 @@ h1,h2,h3,h4,h5,h6
 img
 {
     display: block;
-    overflow: hidden;
+    object-fit: cover;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
 }
 .container {
     max-width: 1158px;
@@ -333,7 +338,6 @@ gap: 24px ;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
-    padding: 0;
 }
 
 .portfolioli
@@ -437,6 +441,3 @@ a {
     text-decoration: none;
 }
 
-ul {
-    list-style: none;
-}
