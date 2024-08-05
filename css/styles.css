@@ -20,7 +20,6 @@ h1,h2,h3,h4,h5,h6
 img
 {
     display: block;
-    object-fit: cover;
 }
 ul {
     list-style: none;
@@ -43,6 +42,7 @@ ul {
     display: flex ;
     align-items: center;
    justify-content: space-between;
+   padding: 24px 0;
 }
 
 .navcon
@@ -332,6 +332,12 @@ gap: 24px ;
     flex-direction: column;
 }
 
+.portfolio .container.portfolio .portfoliolist .portfolioli img
+{
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+}
 .portfoliolist
 {
     display: flex;
@@ -345,10 +351,11 @@ gap: 24px ;
     display: flex;
     width: calc((100% - 48px) / 3);
     flex-direction: column;
+    
 }
 .namesec
 {
-    padding: 32px 16px  ;
+    padding: 32px 16px ;
     border: 1px solid #e7e9fc;
     border-top: none;
 }
